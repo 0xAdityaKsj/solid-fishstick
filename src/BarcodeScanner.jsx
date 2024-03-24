@@ -26,6 +26,7 @@ const BarcodeScanner = () => {
                 }
                 Quagga.start();
                 Quagga.onDetected((data) => {
+                    console.log(data)
                     barcodeResultRef.current.value = data.codeResult.code;
                 });
             });
