@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Quagga from 'quagga';
+import Quagga from '@ericblade/quagga2'; // ES6
 
 const BarcodeScanner = () => {
     const scannerContainerRef = useRef(null);
